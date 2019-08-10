@@ -1,0 +1,60 @@
+@mixin colors($colors) {
+
+    @each $color in map-keys($colors) {
+        .text-#{$color} {
+            color: map-get($colors, $color) !important;
+
+            &:hover {
+                color: map-get($colors, $color) !important;
+            }
+        }
+
+        .nav-link-#{$color} {
+            .nav-link:after {
+                background-color: map-get($colors, $color) !important;
+            }
+        }
+
+        .bg-#{$color} {
+            background-color: map-get($colors, $color);
+        }
+
+        @each $breakpoint in map-keys($grid-breakpoints) {
+            @include media-breakpoint-up($breakpoint) {
+                .bg-#{$breakpoint}-#{$color} {
+                    background-color: #{$color} !important;
+                }
+            }
+        }
+
+        @each $color2 in map-keys($colors) {
+            .bg-#{$color}-#{$color2} {
+                background-image: linear-gradient(to right, map-get($colors, $color), map-get($colors, $color2));
+            }
+        }
+    }
+}
+
+@include colors($colors);
+
+.bg-transparent-white{
+    background-image: linear-gradient(to right, rgba(255,255,255,0.01), #ffffff);
+}
+
+.text-inverted:not(input):not(textarea) {
+    color: $white;
+    border-color: $white;
+
+    &:hover {
+        color: $white;
+    }
+
+    .btn:after {
+        background-image: url("images/arrow.svg");
+    }
+
+    *:not(input):not(textarea) {
+        color: $white;
+        border-color: $white;
+    }
+}

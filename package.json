@@ -1,0 +1,36 @@
+{
+  "name": "starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "Piotr Fijałkowski<piotrfotografia@wp.pl>",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "bootstrap": "^4.0.0",
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-ignore": "^2.0.2",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-newer": "^1.4.0",
+    "gulp-rimraf": "^0.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sequence": "^1.0.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.0",
+    "js-yaml": "^3.11.0",
+    "swiper": "^4.5.0",
+    "waypoints": "^4.0.1"
+  },
+  "scripts": {
+    "dev": "gulp default",
+    "build": "gulp build"
+  },
+  "dependencies": {
+    "curl": "^0.1.4"
+  }
+}

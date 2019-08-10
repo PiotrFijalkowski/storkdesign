@@ -1,0 +1,4 @@
+# BrowserSync customization file
+# Should always be ignored in Git
+PORT: 8000
+PROXY: "localhost/storkdesign"

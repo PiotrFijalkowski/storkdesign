@@ -1,0 +1,255 @@
+html,
+body {
+    font-family: $primary_font;
+    font-weight: $font_regular;
+    font-size: 10px;
+
+    h1,
+    h2,
+    h3,
+    p,
+    a,
+    span,
+    input,
+    ::placeholder,
+    label,
+    li,
+    textarea,
+    td,
+    th {
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+
+        &:hover,
+        &:active {
+            text-decoration: none;
+        }
+    }
+
+    p {
+        &:hover,
+        &:active {
+            text-decoration: none;
+            color: $black2;
+        }
+    }
+}
+
+$multipiers: (xs: 1,
+    sm: 1,
+    md: 1.1,
+    lg: 1.1,
+    xl: 1.3,
+    xxl: 1.5);
+
+@mixin multipliers($multipiers) {
+    @each $multipier in map-keys($multipiers) {
+        @include media-breakpoint-up(#{$multipier}) {
+
+            h1 {
+                $size: 24px;
+                $line: 32px;
+                font-size: $size * map-get($multipiers, $multipier);
+                line-height: $line * map-get($multipiers, $multipier);
+                font-weight: $font_bold;
+            }
+
+            h2 {
+                $size: 14px;
+                $line: 18px;
+                font-size: $size * map-get($multipiers, $multipier);
+                line-height: $line * map-get($multipiers, $multipier);
+                font-weight: $font_regular;
+            }
+            .header-name {
+                $size: 30px;
+                $line: 72px;
+                font-size: $size * map-get($multipiers, $multipier);
+                line-height: $line * map-get($multipiers, $multipier);
+            }
+
+            p,
+            a,
+            span,
+            input,
+            ::placeholder,
+            label,
+            li,
+            textarea,
+            .form-control,
+            td,
+            th,
+            div {
+                $size: 12px;
+                $line: 16px;
+                font-size: $size * map-get($multipiers, $multipier);
+                line-height: $line * map-get($multipiers, $multipier);
+                font-weight: $font_regular;
+                color: #646464;
+            }
+
+            .btn {
+                $size: 12px;
+                $line: 16px;
+                font-size: $size * map-get($multipiers, $multipier);
+                line-height: $line * map-get($multipiers, $multipier);
+                font-weight: $font_bold;
+                color: #646464;
+            }
+
+            .tooltip {
+                $size: 10px;
+                $line: 11px;
+                font-size: $size * map-get($multipiers, $multipier);
+                line-height: $line * map-get($multipiers, $multipier);
+                font-weight: $font_regular;
+            }
+
+            footer,
+            .office-warning p {
+                $size: 11px;
+                $line: 13px;
+                font-size: $size * map-get($multipiers, $multipier);
+                line-height: $line * map-get($multipiers, $multipier);
+                font-weight: $font_regular;
+                color: $stopka;
+            }
+
+            .disclamer {
+                $size: 10px;
+                $line: 11px;
+                font-size: $size * map-get($multipiers, $multipier);
+                line-height: $line * map-get($multipiers, $multipier);
+                font-weight: $font_regular;
+                color: $stopka;
+
+                * {
+                    $size: 10px;
+                    $line: 11px;
+                    font-size: $size * map-get($multipiers, $multipier);
+                    line-height: $line * map-get($multipiers, $multipier);
+                    font-weight: $font_regular;
+                    color: $stopka;
+                }
+            }
+
+            .hp-slider {
+                * {
+                    $size: 20px;
+                    $line: 24px;
+                    font-size: $size * map-get($multipiers, $multipier);
+                    line-height: $line * map-get($multipiers, $multipier);
+                    font-weight: $font_regular;
+                    color: $white !important;
+                }
+            }
+            .project-over-number {
+                $size: 66px;
+                color: #fff;
+                font-family: $primary_font;
+                font-weight: 500;
+                letter-spacing: -1px;
+                font-size: $size * map-get($multipiers, $multipier);
+            }
+    
+            .project-over-details {
+                $size: 16px;
+                color: #fff;
+                font-family: $primary_font;
+                font-weight: 500;
+                letter-spacing: -0.24px;
+                font-size: $size * map-get($multipiers, $multipier);
+            }
+        }
+    }
+}
+
+.menu-txt,
+.nav-link {
+    font-size: 16px;
+    font-weight: $font_regular;
+
+    @include media-breakpoint-up(md) {
+        font-size: 13px;
+    }
+
+    @include media-breakpoint-up(xxl) {
+        font-size: 16px;
+    }
+}
+
+@include multipliers($multipiers);
+
+a {
+    font-weight: $font_bold;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.menu-txt {
+    position: relative;
+
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: 5px;
+        left: 50%;
+        height: 1px;
+        width: 0;
+        background-color: $black;
+    }
+
+    &:hover {
+        height: 1px;
+        border-radius: .5px;
+    }
+
+    &:active {
+        height: 3px;
+        border-radius: 1.5px;
+    }
+}
+
+strong {
+    font-weight: bold;
+
+    * {
+        font-weight: bold;
+    }
+}
+
+.text-italic {
+    font-style: italic;
+}
+
+.text-bold {
+    font-weight: $font_bold;
+}
+
+.text-normal {
+    font-weight: $font_regular;
+}
+
+.text-bolder {
+    font-weight: $font_black;
+}
+
+.text-underline {
+    text-decoration: underline;
+}
+
+.text-upper {
+    text-transform: uppercase !important;
+}
+h3 {
+    font-size: 20px;
+    line-height: 30px;
+    color: $black;
+    margin-bottom: 50px!important;
+}
+h4 {
+    color: $black;
+}

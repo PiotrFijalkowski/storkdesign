@@ -1,0 +1,154 @@
+
+.margin-homepage {
+    margin-bottom: 94px;
+    @include media-breakpoint-up (lg) {
+        margin-bottom: 130px;
+    }
+}
+.block {
+    overflow: hidden;
+    width: 800px;
+    margin: 50px auto;
+    background: #fff;
+  }
+  .animation {
+    width: auto;
+    height: 100px;
+    font-size: 0px;
+  }
+  .animation div {
+    display: inline-block;
+    width: auto;
+    float: none;
+    padding: 0 10px;
+  }
+
+
+
+
+
+
+
+  @mixin white-gradient {
+	background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+}
+
+$animationSpeed: 110s;
+
+// Animation
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-2597px * 5))}
+}
+
+
+// Styling
+.slider {
+	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+	height: 200px;
+	margin: auto;
+	overflow:hidden;
+	position: relative;
+	
+	&::before,
+	&::after {
+		content: "";
+		height: 200px;
+		position: absolute;
+		width: 1997px;
+		z-index: 2;
+	}
+	
+	&::after {
+		right: 0;
+		top: 0;
+		transform: rotateZ(180deg);
+	}
+
+	&::before {
+		left: 0;
+		top: 0;
+	}
+	
+	.slide-track {
+		animation: scroll $animationSpeed linear infinite;
+		display: flex;
+		width: calc(2597px * 5);
+	}
+	
+	.slide {
+		height: 200px;
+        width: 2597px;
+        display: block;
+        position: relative;
+        img {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+.logo-slider {
+    background: black;
+    height: 200px;
+    position: relative;
+    @include media-breakpoint-up(md) {
+        height: 400px;
+    }
+    .logo-slider-container {
+        display: flex;
+        height: 100%;
+        align-items: center;
+    }
+    .popla {
+        position: absolute;
+        max-height:200px;
+        left: 0;
+        z-index: 1;
+        @include media-breakpoint-up(md) {
+            max-height:400px;
+            left: 5%;
+        }
+        @include media-breakpoint-up(lg) {
+            left:14%;
+        }
+    }
+}
+.page-pracownia {
+    .swiper-wrapper
+{
+  transition-timing-function: linear;
+}
+.swiper-container {
+    pointer-events: none; 
+}
+    .swiper-slide {
+        height: 200px;
+        img {
+            margin-top: auto;
+            margin-bottom: auto;
+            max-height: 85%;
+            max-width: 85%; 
+        }
+    }
+}
+
+// .swiper-wrapper {
+//     display: flex !important;
+//     align-items: center !important;
+// }

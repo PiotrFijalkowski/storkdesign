@@ -1,0 +1,49 @@
+.swiper {
+    &-slide {
+        &-caption {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+        }
+    }
+
+    &-nav {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        display: flex;
+        cursor: pointer;
+        z-index: 1;
+
+        &-button {
+            height: 50px;
+            display: block;
+            background: white;
+            opacity: .8;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+
+            @include media-breakpoint-up(xxl) {
+                height: 80px;
+                width: 80px;
+            }
+
+            img {
+                width: 14px;
+                height: 16px;
+                transform: rotate(-90deg);
+            }
+
+            &-prev {
+                transform: rotate(180deg);
+            }
+
+            &-next {
+            }
+        }
+    }
+}

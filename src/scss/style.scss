@@ -1,0 +1,64 @@
+/*!
+    Theme Name: StorkDesign Template
+    Theme URI: -
+    Description: -
+    Version: 1.0.0
+    Author: Piotr Fijałkowski
+    Author URI:
+*/
+
+/*
+========================================================
+                        CORE STYLES                     
+========================================================
+*/
+@import 'variables';
+@import 'mixins';
+@import 'fonts';
+@import 'custom-bootstrap';
+@import 'colors';
+@import 'custom-swiper';
+@import 'typography';
+@import 'wpcore';
+@import 'animations';
+@import 'base';
+@import 'icons';
+
+@import 'header.scss';
+@import 'footer.scss';
+
+
+
+/*
+========================================================
+                        PARTIALS                     
+========================================================
+*/
+
+/* [inject part] */
+
+
+/*
+========================================================
+                    TEMPLATE PARTS                     
+========================================================
+*/
+
+
+/* [inject tp] */
+@import 'template-parts/custom-content-simple_text_editor';
+@import 'template-parts/custom-content-menu';
+@import 'template-parts/custom-content-project';
+@import 'template-parts/custom-content-proces';
+@import 'template-parts/custom-content-post_nav';
+@import 'template-parts/custom-content-contact';
+@import 'template-parts/custom-content-full_width_slider';
+/*
+========================================================
+                    PAGE TEMPLATES                     
+========================================================
+*/
+
+/* [inject pt] */ 
+
+  

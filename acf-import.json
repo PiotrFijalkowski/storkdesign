@@ -1,0 +1,337 @@
+[
+    {
+        "key": "group_5ba4ba1151d8e",
+        "title": "Zawartość strony",
+        "fields": [
+            {
+                "key": "field_5ba4ba42f0663",
+                "label": "",
+                "name": "content",
+                "type": "flexible_content",
+                "instructions": "Wybierze element, który chcesz dodać.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layouts": {
+                    "5ba4c24d42aa4": {
+                        "key": "5ba4c24d42aa4",
+                        "name": "menu",
+                        "label": "Menu",
+                        "display": "block",
+                        "sub_fields": [
+                            {
+                                "key": "field_5ca48f137e271",
+                                "label": "Logo",
+                                "name": "logo_desktop",
+                                "type": "image",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "50",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "return_format": "array",
+                                "preview_size": "full",
+                                "library": "all",
+                                "min_width": "",
+                                "min_height": "",
+                                "min_size": "",
+                                "max_width": "",
+                                "max_height": "",
+                                "max_size": "",
+                                "mime_types": ""
+                            },
+                            {
+                                "key": "field_5ca48ff382d2f",
+                                "label": "Logo mobilne",
+                                "name": "logo_mobile",
+                                "type": "image",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "50",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "return_format": "array",
+                                "preview_size": "full",
+                                "library": "all",
+                                "min_width": "",
+                                "min_height": "",
+                                "min_size": "",
+                                "max_width": "",
+                                "max_height": "",
+                                "max_size": "",
+                                "mime_types": ""
+                            },
+                            {
+                                "key": "field_5c94abe979646",
+                                "label": "Ustawienia wyświetlania",
+                                "name": "settings",
+                                "type": "group",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "100",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "layout": "block",
+                                "sub_fields": [
+                                    {
+                                        "key": "field_5c94a3087963e",
+                                        "label": "Szerokość zawartości",
+                                        "name": "width",
+                                        "type": "radio",
+                                        "instructions": "",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "33",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "choices": {
+                                            "box": "Normalna",
+                                            "full": "Pełna"
+                                        },
+                                        "allow_null": 0,
+                                        "other_choice": 0,
+                                        "default_value": "full",
+                                        "layout": "horizontal",
+                                        "return_format": "value",
+                                        "save_other_choice": 0
+                                    },
+                                    {
+                                        "key": "field_5ba5262f79524",
+                                        "label": "Dodatkowe klasy CSS",
+                                        "name": "extra_classes",
+                                        "type": "text",
+                                        "instructions": "Wstaw dodatkowe klasy CSS np. bg-grey (szare tło).",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "33",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "default_value": "",
+                                        "placeholder": "",
+                                        "prepend": "",
+                                        "append": "",
+                                        "maxlength": ""
+                                    },
+                                    {
+                                        "key": "field_5bc452d061d37",
+                                        "label": "Wyłącz sekcję",
+                                        "name": "disable",
+                                        "type": "true_false",
+                                        "instructions": "Zaznacz jeśli chcesz ukryć tą sekcję.",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "33",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "message": "",
+                                        "default_value": 0,
+                                        "ui": 0,
+                                        "ui_on_text": "",
+                                        "ui_off_text": ""
+                                    },
+                                    {
+                                        "key": "field_5ca9b89ea1d97",
+                                        "label": "ID Sekcji",
+                                        "name": "id",
+                                        "type": "text",
+                                        "instructions": "",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "default_value": "",
+                                        "placeholder": "",
+                                        "prepend": "",
+                                        "append": "",
+                                        "maxlength": ""
+                                    }
+                                ]
+                            }
+                        ],
+                        "min": "",
+                        "max": ""
+                    },
+                    "5ba4cf58b1ba9": {
+                        "key": "5ba4cf58b1ba9",
+                        "name": "simple_editor",
+                        "label": "Prosty edytor tekstowy",
+                        "display": "block",
+                        "sub_fields": [
+                            {
+                                "key": "field_5ba4cf5db1baa",
+                                "label": "Tekst",
+                                "name": "text",
+                                "type": "wysiwyg",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "tabs": "all",
+                                "toolbar": "full",
+                                "media_upload": 1,
+                                "delay": 0
+                            },
+                            {
+                                "key": "field_5c94ad1279657",
+                                "label": "Ustawienia wyświetlania",
+                                "name": "settings",
+                                "type": "group",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "100",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "layout": "block",
+                                "sub_fields": [
+                                    {
+                                        "key": "field_5c94ad1279658",
+                                        "label": "Szerokość zawartości",
+                                        "name": "width",
+                                        "type": "radio",
+                                        "instructions": "",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "33",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "choices": {
+                                            "box": "Normalna",
+                                            "full": "Pełna"
+                                        },
+                                        "allow_null": 0,
+                                        "other_choice": 0,
+                                        "default_value": "full",
+                                        "layout": "horizontal",
+                                        "return_format": "value",
+                                        "save_other_choice": 0
+                                    },
+                                    {
+                                        "key": "field_5c94ad1279659",
+                                        "label": "Dodatkowe klasy CSS",
+                                        "name": "extra_classes",
+                                        "type": "text",
+                                        "instructions": "Wstaw dodatkowe klasy CSS np. bg-grey (szare tło).",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "33",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "default_value": "",
+                                        "placeholder": "",
+                                        "prepend": "",
+                                        "append": "",
+                                        "maxlength": ""
+                                    },
+                                    {
+                                        "key": "field_5c94ad127965a",
+                                        "label": "Wyłącz sekcję",
+                                        "name": "disable",
+                                        "type": "true_false",
+                                        "instructions": "Zaznacz jeśli chcesz ukryć tą sekcję.",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "33",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "message": "",
+                                        "default_value": 0,
+                                        "ui": 0,
+                                        "ui_on_text": "",
+                                        "ui_off_text": ""
+                                    },
+                                    {
+                                        "key": "field_5ca9b963a1d9c",
+                                        "label": "ID Sekcji",
+                                        "name": "id",
+                                        "type": "text",
+                                        "instructions": "",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "default_value": "",
+                                        "placeholder": "",
+                                        "prepend": "",
+                                        "append": "",
+                                        "maxlength": ""
+                                    }
+                                ]
+                            }
+                        ],
+                        "min": "",
+                        "max": ""
+                    }
+                },
+                "button_label": "Dodaj sekcję",
+                "min": "",
+                "max": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "page"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [
+            "the_content",
+            "excerpt",
+            "discussion",
+            "comments",
+            "format",
+            "featured_image",
+            "categories",
+            "tags",
+            "send-trackbacks"
+        ],
+        "active": 1,
+        "description": ""
+    }
+]

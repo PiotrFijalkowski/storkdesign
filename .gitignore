@@ -1,0 +1,10 @@
+app/uploads/
+app/themes/*
+app/upgrade
+wp/
+wp-config.php
+.htaccess
+.vscode/
+node_modules/
+local.config.json
+app/plugins/

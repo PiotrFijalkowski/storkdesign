@@ -1,0 +1,34 @@
+# Autoprefixer settings
+COMPATIBILITY:
+  - "last 2 versions"
+  - "ie >= 9"
+  - "ios >= 7"
+
+# Pass down paths to Gulp
+PATHS:
+  # Path to output directory
+  dist: "app/themes/storkdesign"
+  # Path to fonts
+  fonts:
+    - "src/fonts/**/*"
+  # Path to images
+  images:
+    - "src/images/**/*"
+  # Paths to Sass libraries & custom files
+  scss:
+    lib:
+      - "node_modules/swiper/src/swiper.scss"
+      - "src/scss/lib/**/*.scss"
+    custom:
+      - "src/scss/**/*.scss"
+      - "!src/scss/lib/**/*.scss" # exclude libraries
+  # Paths to JavaScript lubraries & custom files
+  scripts:
+    lib:
+      - "node_modules/bootstrap/dist/js/bootstrap.bundle.js"
+      - "node_modules/swiper/dist/js/swiper.js"
+      - "src/js/lib/*.js"
+    custom:
+      - "src/js/*.js"      
+  php:
+    - "src/php/**/*.php"

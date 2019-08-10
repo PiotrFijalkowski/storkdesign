@@ -1,0 +1,94 @@
+.page-hello {
+    header {
+        height: 100vh;
+
+        .header {
+            height: 100%; //100
+        }
+
+        background-image: url('images/background.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 50%;
+    }
+
+    .header-arrow {
+        img {
+            cursor: pointer;
+        }
+
+        position: absolute;
+        bottom: 20px;
+    }
+
+    .header-name {
+        color: #000000;
+        font-weight: 200;
+        letter-spacing: -0.54px;
+        font-family: Poppins;
+
+        ;
+    }
+
+}
+
+.article-container, .process-main-container {
+    .article-container--title {
+        color: #424242;
+        font-family: Poppins;
+        font-size: 18px;
+        font-weight: 600;
+        letter-spacing: -0.18px;
+    }
+
+    h1 {
+        color: $black;
+        font-family: Poppins;
+        font-size: 30px;
+        font-weight: 600;
+        letter-spacing: -0.36px;
+        text-transform: uppercase;
+    }
+
+    p {
+        color: $black2;
+        font-family: Poppins;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 25px;
+
+    }
+}
+
+.nav-transparent {
+    transition: 750ms ease;
+    background: transparent !important;
+}
+
+.nav-toggle {
+    background: white !important;
+}
+.nav-wrap {
+    padding: 20px 0px;
+}
+.wnetrza {
+    .wnetrza-nav {
+        .nav-link {
+            font-weight: 900;
+        }
+    }
+}
+.architektura {
+    .architektura-nav {
+        .nav-link {
+            font-weight: 900;
+        }
+    }
+}
+.inne {
+    .inne-nav {
+        .nav-link {
+            font-weight: 900;
+        }
+    }
+}
