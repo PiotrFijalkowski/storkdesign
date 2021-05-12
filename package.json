@@ -23,7 +23,7 @@
     "gulp-sourcemaps": "^2.6.4",
     "gulp-uglify": "^3.0.0",
     "js-yaml": "^3.11.0",
-    "swiper": "^4.5.0",
+    "swiper": "^6.5.1",
     "waypoints": "^4.0.1"
   },
   "scripts": {
